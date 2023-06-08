@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+<body >
+
+    <!-- header -->
+  <nav id="desktop-nav">
+    <div class="logo">Ankush Ukey</div>
+    <div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a> </li>
+            <li><a href="#experience">Experience</a> </li>
+            <li><a href="#projects">Projects</a> </li>
+            <li><a href="#contact">Contact</a> </li>
+        </ul>
+    </div>
+  </nav>
+
+  <nav id="hamburger-nav">
+    <div class="logo">Ankush Ukey</div>
+    <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+        </div>
+        <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a> </li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a> </li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a> </li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a> </li>
+        </div>
+    </div>
+  </nav>
+
+  <!-- profile -->
+  <section id="profile">
+    <div class="section__pic-container">
+      <img class="pic" src="./assets/WhatsApp Image 2023-06-08 at 18.43.36.jpeg" alt="My profile picture" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Ankush Ukey</h1>
+      <p class="section__text__p2">MERN STACK Developer</p>
+      <div class="btn-container">
+        <button
+          class="btn btn-color-2"
+          onclick="window.open('./assets/Resume_Ankush_ukey (2).pdf')"
+        >
+          Download CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          Contact Info
+        </button>
+      </div>
+      <div id="socials-container">
+        <img
+          src="./assets/linkedin.png"
+          alt="My LinkedIn profile"
+          class="icon"
+          onclick="location.href='https://www.linkedin.com/in/ankush-ukey-7bb421210/'"
+        />
+        <img
+          src="./assets/github.png"
+          alt="My Github profile"
+          class="icon"
+          onclick="location.href='https://github.com/ankushx'"
+        />
+        <img
+        src="./assets/leetcode.png"
+        alt="My leetcode profile"
+        class="icon"
+        onclick="location.href='https://leetcode.com/Beginner_coderhacker/'"
+      />
+      </div>
+    </div>
+  </section>
+  
+  <!-- about -->
+  <section id="about">
+    <p class="section__text__p1">Get to know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+        <div class="section__pic-container">
+            <img src="./assets/profile.png" alt="profile picture"
+            class="about-pic pic"
+            >
+
+        </div>
+        
+        <div class="about-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <img src="./assets/experience.png" alt="experience icon"
+                    class="icon"
+                    >
+                    <h3>Education</h3>
+                    <p>B.Tech. Bachelors Degree,cgpa-7.6<br />12th-Computer Science,percentage-86% <br>10th-percentage-90%</p>
+                </div>
+                <!-- <div class="details-container">
+                  <img
+                    src="./assets/education.png"
+                    alt="Education icon"
+                    class="icon"
+                  />
+                  <h3>Education</h3>
+                  <p>B.Sc. Bachelors Degree<br />M.Sc. Masters Degree</p>
+                </div> -->
+               
+
+            </div>
+            <div class="text-container">
+                <p>My name is Ankush Ukey,i am 2022 passout student of COEP in mechanical engineering. I have a good programming knowledge of c++ language with sound knowledge of data structure and algorithms(dsa) and object oriented programming (oops). I have also studied MYSQL,html,css, javascript,react,nodeJs,expressJs,mongoDb.
+                     I am passionate about learning new technology and i have a good problem solving skills. In my free time i like to solve
+                      coding questions and play outdoor games like cricket, badminton etc.</p>
+            </div>
+        </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow"
+    onclick="location.href='./#projects'"
+    >
+  </section>
+
+
+
+
+  <!-- poject -->
+  <section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img
+              src="./assets/robotjpg.jpg"
+              alt="Project 1"
+              class="project-img"
+            />
+          </div>
+          <h2 class="experience-sub-title project-title">• ROBOTIC ARM for fruit sorting</h2>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://drive.google.com/drive/folders/1GDpfJtDEOYg-dUfSd0wNZ6Y4ebA5kG7S'"
+            >
+              Github
+            </button>
+            <!-- <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/'"
+            >
+              Live Demo
+            </button> -->
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img
+              src="./assets/expansor.png"
+              alt="Project 2"
+              class="project-img"
+            />
+          </div>
+          <h2 class="experience-sub-title project-title"> Expense Management System</h2>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/ankushx/expensor'"
+            >
+              Github
+            </button>
+            <!-- <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/'"
+            >
+              Live Demo
+            </button> -->
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img
+              src="./assets/blog.png"
+              alt="Project 3"
+              class="project-img"
+            />
+          </div>
+          <h2 class="experience-sub-title project-title"> Blog Website</h2>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/ankushx/blog'"
+            >
+              Github
+            </button>
+            <!-- <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/'"
+            >
+              Live Demo
+            </button> -->
+          </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/razorpay.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">  CLONE RAZORPAY </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/ankushx/clone-razorpay'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://friendly-frangollo-f33155.netlify.app/'"
+              >
+                Live Demo
+              </button>
+            </div>
+        </div>
+      </div>
+    </div>
+    <img
+      src="./assets/arrow.png"
+      alt="Arrow icon"
+      class="icon arrow"
+      onclick="location.href='./#experience'"
+    />
+  </section>
+
+    <!-- skills -->
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <!-- <h2 class="experience-sub-title">languages</h2> -->
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C++</h3>
+                  <!-- <p>Experienced</p> -->
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>DSA</h3>
+                  <!-- <p>Experienced</p> -->
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>object-oriented programming</h3>
+                  <!-- <p>Intermediate</p> -->
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MYSQL</h3>
+                  <!-- <p>Experienced</p> -->
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>html and CSS</h3>
+                  <!-- <p>Experienced</p> -->
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>ReactJs</h3>
+                  <!-- <p>Experienced</p> -->
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>NodeJs</h3>
+                  <!-- <p>Experienced</p> -->
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>ExpressJs</h3>
+                  <!-- <p>Experienced</p> -->
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>mongoDb</h3>
+                  <!-- <p>Experienced</p> -->
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Javascript</h3>
+                  <!-- <p>Experienced</p> -->
+                </div>
+              </article>
+              <!-- <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C++</h3>
+                  <!-- <p>Experienced</p> -->
+                </div>
+              </article> -->
+              
+            </div>
+          </div>
+          <!-- <div class="details-container">
+            <h2 class="experience-sub-title">Technology</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>ReactJd</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Express JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>mongoDb</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div> -->
+        </div>
+        <div class="about-containers">
+          <div class="details-container">
+            <img
+              src="./assets/experience.png"
+              alt="Experience icon"
+              class="icon"
+            />
+            <h3>Certifications</h3>
+            <p>Sql- hackerRank <br />Mathematics-COEP</p>
+          </div>
+          <div class="details-container">
+            <img
+              src="./assets/education.png"
+              alt="Education icon"
+              class="icon"
+            />
+            <h3>Coding Profile</h3>
+            <p><a class="coding" href="https://leetcode.com/Beginner_coderhacker/">leetcode</a><br />
+              <a class="coding" href="https://auth.geeksforgeeks.org/user/ankushukey4/?utm_source=geeksforgeeks&utm_medium=my_profile&utm_campaign=auth_user">Geeksforgeeks</a><br />
+              <a class="coding" href="https://www.codingninjas.com/codestudio/profile/ed8aeec2-f43e-4e3b-ae10-725028855bbb">Coding-ninjas</a><br /></p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+
+  <!-- contact -->
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+            <img src="./assets/email.png" alt="email icon"
+            class="icon contact-icon"
+            >
+            <p>
+                <a href="mailto:ankushukey4@gmail.com">ankushukey4@gmail.com</a>
+            </p>
+        </div>
+        <div class="contact-info-container">
+            <img src="./assets/linkedin.png" alt="linkedin icon"
+            class="icon contact-icon"
+            >
+            <p>
+                <a href="https://www.linkedin.com/in/ankush-ukey-7bb421210/">LinkedIn</a>
+            </p>
+        </div>
+    </div>
+  </section>
+
+  <footer>
+    <nav>
+        <div class="nav-links-container">
+            <ul class="nav-links">
+                <li><a href="#about">About</a> </li>
+                <li><a href="#experience">Experience</a> </li>
+                <li><a href="#projects">Projects</a> </li>
+                <li><a href="#contact">Contact</a> </li>
+            </ul>
+        </div>
+    </nav>
+    <p>Copyright &#169; 2023 Ankush Ukey. All Right Reserved.</p>
+
+  </footer>
+
+  <script src="srcipt.js"></script>
+    
+</body>
+</html>
